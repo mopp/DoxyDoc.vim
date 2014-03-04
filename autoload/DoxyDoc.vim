@@ -164,7 +164,7 @@ endfunction
 "-----------------------------------------------------------------------------------------
 " Global functions
 "-----------------------------------------------------------------------------------------
-function! doxydoc#make_author_comment()
+function! DoxyDoc#make_author_comment()
     if !exists('g:doxydoc_author_name')
         let g:doxydoc_author_name = input('Please input name of the author : ')
     endif
@@ -195,7 +195,7 @@ function! doxydoc#make_author_comment()
 endfunction
 
 
-function! doxydoc#make_function_comment()
+function! DoxyDoc#make_function_comment()
     let line = getline('.')
     let info = s:get_function_info(line)
 
