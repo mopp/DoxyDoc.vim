@@ -15,8 +15,8 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-command! -nargs=0 DoxyDoc :call doxydoc#make_function_comment()
-command! -nargs=0 DoxyDocAuthor :call doxydoc#make_author_comment()
+command! -nargs=0 DoxyDoc :call DoxyDoc#make_function_comment()
+command! -nargs=0 DoxyDocAuthor :call DoxyDoc#make_author_comment()
 
 
 let &cpo = s:save_cpo
